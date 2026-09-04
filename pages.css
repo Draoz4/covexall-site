@@ -20,6 +20,8 @@
 
 /* ---------- page hero ---------- */
 .page-hero { position: relative; overflow: hidden; padding: 20px 0 0; }
+.page-hero .hero-bg::after { opacity: .42; }
+.page-hero .hero-bg::before { display: none; }
 .page-hero .hero-bg { background: radial-gradient(60% 55% at 78% 40%, rgba(76,201,255,.32), transparent 70%), radial-gradient(45% 45% at 15% 20%, rgba(255,224,150,.32), transparent 70%), linear-gradient(180deg, #EAF3FF 0%, #F6F9FF 100%); }
 .ph-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 24px; min-height: 440px; }
 .ph-grid.three { grid-template-columns: 1.1fr 1fr 280px; }

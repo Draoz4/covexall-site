@@ -16,10 +16,10 @@ const LINKS = {
   youtube: '#',
 };
 const PRODUCTS = {
-  pocket: { name: 'Covexall Pocket Hand Sanitizer', size: '50ml', price: 3.99, img: 'assets/product-4oz.png', url: 'pocket-hand-sanitizer.html' },
-  daily:  { name: 'Covexall Daily Defense Hand Sanitizer', size: '250ml', price: 7.99, img: 'assets/product-4oz.png', url: 'daily-defense-hand-sanitizer.html' },
-  family: { name: 'Covexall Family Size Hand Sanitizer', size: '500ml', price: 11.99, img: 'assets/product-4oz.png', url: 'family-size-hand-sanitizer.html' },
-  bundle: { name: 'Covexall Protection Bundle', size: 'Pocket + Daily Defense + Family Size', price: 19.99, img: 'assets/product-4oz.png', url: 'products.html#bundles' },
+  pocket: { name: 'Covexall Pocket Hand Sanitizer', size: '50ml', price: 3.99, img: 'assets/product-4oz.png', url: '/pocket-hand-sanitizer' },
+  daily:  { name: 'Covexall Daily Defense Hand Sanitizer', size: '250ml', price: 7.99, img: 'assets/product-4oz.png', url: '/daily-defense-hand-sanitizer' },
+  family: { name: 'Covexall Family Size Hand Sanitizer', size: '500ml', price: 11.99, img: 'assets/product-4oz.png', url: '/family-size-hand-sanitizer' },
+  bundle: { name: 'Covexall Protection Bundle', size: 'Pocket + Daily Defense + Family Size', price: 19.99, img: 'assets/product-4oz.png', url: '/products#bundles' },
 };
 const FREE_SHIP_AT = 25;
 const CHAT_WEBHOOK = 'https://n8n.nutricove.co/webhook/covexall-rag';
