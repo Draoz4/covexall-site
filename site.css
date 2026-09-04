@@ -68,11 +68,11 @@ main { display: block; }
 .nav-wrap { position: sticky; top: 0; z-index: 50; }
 .nav { display: flex; align-items: center; gap: 24px; height: var(--nav-h); padding: 0 40px; background: linear-gradient(90deg, #07173B, #0B2455 55%, #0A1E4A); color: #fff; box-shadow: 0 10px 30px rgba(7,23,59,.3); }
 .logo { font-family: var(--font-head); font-weight: 900; font-size: 26px; letter-spacing: .05em; color: #fff; text-shadow: 0 0 16px rgba(76,201,255,.9), 0 0 4px rgba(255,255,255,.6); }
-.nav-links { display: flex; gap: 4px; margin-left: 60px; flex: 1; justify-content: flex-start; }
-.nav-links a { display: block; padding: 8px 14px; font-family: var(--font-head); font-weight: 700; font-size: 15px; color: #E6EEFF; position: relative; }
-.nav-links a::after { content: ''; position: absolute; left: 14px; right: 14px; bottom: 0; height: 2.5px; border-radius: 2px; background: var(--cyan); transform: scaleX(0); transition: transform .25s; }
+.nav-links { display: flex; gap: 0; margin-left: 28px; flex: 1; justify-content: flex-start; }
+.nav-links a { display: block; padding: 8px 11px; font-family: var(--font-head); font-weight: 700; font-size: 14px; color: #E6EEFF; position: relative; white-space: nowrap; }
+.nav-links a::after { content: ''; position: absolute; left: 11px; right: 11px; bottom: 0; height: 2.5px; border-radius: 2px; background: var(--cyan); transform: scaleX(0); transition: transform .25s; }
 .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
-.nav-more { display: none; } .nav-more:has(a.active) { display: block; }
+.nav-more { display: block; }
 .nav-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
 .icon-btn { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: #fff; border: 1.5px solid rgba(255,255,255,.35); background: none; position: relative; }
 .icon-btn svg { width: 19px; height: 19px; }
@@ -685,7 +685,6 @@ body.home .loved-photos .stars, body.home .loved-photos p, body.home .loved-phot
   .steps.row { grid-template-columns: 1fr 1fr; }
   .why-proof, .moments, .also, .tips, .topics, .big-places { grid-template-columns: 1fr; }
   .faq-cats { grid-template-columns: repeat(3, 1fr); } .faq-cats li + li { border-left: 0; }
-  .nav-more { display: block; }
 }
 @media (max-width: 900px) {
   .nav-links { position: fixed; inset: calc(var(--nav-h) + 10px) 16px auto; flex-direction: column; gap: 2px; background: #0B2455; padding: 14px; border-radius: 18px; box-shadow: var(--shadow-lg); transform: translateY(-12px); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; margin: 0; }
