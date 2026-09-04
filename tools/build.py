@@ -30,7 +30,7 @@ def expand(html, depth=0):
 built = []
 for page in sorted((SRC / "pages").glob("*.html")):
     raw = page.read_text(encoding="utf-8")
-    meta = {"title": "Covexall", "description": "", "nav": ""}
+    meta = {"title": "Covexall", "description": "", "nav": "", "body": ""}
     m = re.match(r"\s*<!--(.*?)-->", raw, re.S)
     if m:
         for line in m.group(1).strip().splitlines():
@@ -40,7 +40,7 @@ for page in sorted((SRC / "pages").glob("*.html")):
         raw = raw[m.end():]
     content = expand(raw)
     html = layout.replace("{{content}}", content)
-    for k in ("title", "description"):
+    for k in ("title", "description", "body"):
         html = html.replace("{{" + k + "}}", meta[k])
     html = expand(html)
     # mark the active nav link

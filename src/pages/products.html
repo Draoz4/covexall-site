@@ -1,28 +1,30 @@
 <!--
 title: All Products — Covexall
-description: Trusted, alcohol-free hand sanitizers for every adventure, every day. Pocket, Daily Defense and Family Size.
+description: Trusted, alcohol-free hand sanitizers for every adventure, every day.
 nav: products
 -->
 <section class="page-hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container ph-grid">
+  <img class="ph-art" src="assets/mk/hero-products.webp" alt="">
+  <div class="ph-fade"></div>
+  <div class="container">
     <div class="ph-copy reveal">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>Products</span></nav>
       <h1>All Products</h1>
       <p class="lead">Trusted, alcohol-free hand sanitizers for every adventure, every day.</p>
     </div>
-    <div class="ph-visual" aria-hidden="true">
-      <img class="ph-viro float-med" src="assets/viro-hero.webp" alt="">
-      <img class="ph-bac float-slow" src="assets/bac-front.webp" alt="">
-      <img class="ph-snot float-fast" src="assets/snot-front.webp" alt="">
-      <img class="ph-cove" src="assets/cove-bust.webp" alt="">
-      <img class="ph-bottle" src="assets/product-4oz.png" alt="">
-    </div>
   </div>
-  <div class="container chips-wrap">{{include:chips}}</div>
 </section>
+<div class="container chips-wrap">
+  <ul class="chips reveal">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3c-4 5.5-7 9-7 12.5A7 7 0 0 0 19 15.5C19 12 16 8.5 12 3z"/></svg>Water-based</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>Alcohol-free</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 3C13 4 8 9 4 21c12-4 17-9 17-18z"/></svg>Non-irritating</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><circle cx="12" cy="12" r="2.5"/></svg>Kills 99.9% on contact</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Up to four hours<br>of protection</li>
+  </ul>
+</div>
 
-<section class="section shop-sec">
+<section class="section">
   <div class="container shop">
     <aside class="filters reveal">
       <p class="filters-title">Shop by</p>
@@ -43,21 +45,21 @@ nav: products
       </ul>
       <h4>Features</h4>
       <ul class="filter-checks">
-        <li><label><input type="checkbox" checked>Fragrance-Free</label></li>
-        <li><label><input type="checkbox" checked>Dye-Free</label></li>
-        <li><label><input type="checkbox" checked>Hypoallergenic</label></li>
-        <li><label><input type="checkbox" checked>Fast Drying</label></li>
+        <li><label><input type="checkbox">Fragrance-Free</label></li>
+        <li><label><input type="checkbox">Dye-Free</label></li>
+        <li><label><input type="checkbox">Hypoallergenic</label></li>
+        <li><label><input type="checkbox">Fast Drying</label></li>
       </ul>
     </aside>
     <div class="shop-main">
       <div class="shop-head reveal">
         <p data-shop-count>Showing 3 of 3 products</p>
-        <label class="sort">Sort by: <select data-sort><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></label>
+        <label class="sort"><select data-sort><option value="featured">Sort by: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></label>
       </div>
       <div class="pgrid" data-pgrid>
         <article class="pcard reveal" data-cat="pocket" data-price="3.99">
           <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
-          <a class="pcard-img" href="/pocket-hand-sanitizer"><img src="assets/product-4oz.png" alt="Covexall Pocket Hand Sanitizer"></a>
+          <a class="pcard-img" href="/pocket-hand-sanitizer"><img src="assets/mk/card-pocket.webp" alt="Covexall Pocket Hand Sanitizer"></a>
           <h3><a href="/pocket-hand-sanitizer">Covexall Pocket Hand Sanitizer</a></h3>
           <p class="size">50ml</p>
           <p class="price">$3.99</p>
@@ -68,7 +70,7 @@ nav: products
         </article>
         <article class="pcard reveal" data-cat="daily" data-price="7.99">
           <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
-          <a class="pcard-img" href="/daily-defense-hand-sanitizer"><img src="assets/product-4oz.png" alt="Covexall Daily Defense Hand Sanitizer"></a>
+          <a class="pcard-img" href="/daily-defense-hand-sanitizer"><img src="assets/mk/card-daily.webp" alt="Covexall Daily Defense Hand Sanitizer"></a>
           <h3><a href="/daily-defense-hand-sanitizer">Covexall Daily Defense Hand Sanitizer</a></h3>
           <p class="size">250ml</p>
           <p class="price">$7.99</p>
@@ -79,7 +81,7 @@ nav: products
         </article>
         <article class="pcard reveal" data-cat="family" data-price="11.99">
           <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
-          <a class="pcard-img" href="/family-size-hand-sanitizer"><img src="assets/product-4oz.png" alt="Covexall Family Size Hand Sanitizer"></a>
+          <a class="pcard-img" href="/family-size-hand-sanitizer"><img src="assets/mk/card-family.webp" alt="Covexall Family Size Hand Sanitizer"></a>
           <h3><a href="/family-size-hand-sanitizer">Covexall Family Size Hand Sanitizer</a></h3>
           <p class="size">500ml</p>
           <p class="price">$11.99</p>
@@ -89,9 +91,8 @@ nav: products
           </div>
         </article>
         <article class="pcard reveal" data-cat="bundle" data-price="19.99" id="bundles">
-          <span class="badge">Save more</span>
           <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
-          <a class="pcard-img pcard-img-bundle" href="#bundles"><img src="assets/product-4oz.png" alt=""><img src="assets/product-4oz.png" alt=""><img src="assets/product-4oz.png" alt="Covexall Protection Bundle"></a>
+          <a class="pcard-img" href="#bundles"><img src="assets/mk/cat-bundle.webp" alt="Covexall Protection Bundle"></a>
           <h3>Covexall Protection Bundle</h3>
           <p class="size">Pocket + Daily Defense + Family Size</p>
           <p class="price">$19.99 <s>$23.97</s></p>
@@ -104,29 +105,41 @@ nav: products
       <p class="shop-none" data-shop-none hidden>No products match those filters yet.</p>
     </div>
   </div>
-  {{include:shipping}}
+  <div class="container">{{include:shipping}}</div>
 </section>
 
-<section class="section cats-sec">
+<section class="section">
   <div class="container">
     <ul class="cats">
-      <li class="cat reveal"><div><h3>Pocket Size</h3><p>Perfect for on-the-go protection anywhere.</p><a class="cat-link" href="/pocket-hand-sanitizer">Shop Pocket Size <span>&rarr;</span></a></div><img src="assets/product-4oz.png" alt=""></li>
-      <li class="cat reveal"><div><h3>Daily Defense</h3><p>Long-lasting protection for everyday life.</p><a class="cat-link" href="/daily-defense-hand-sanitizer">Shop Daily Defense <span>&rarr;</span></a></div><img src="assets/product-4oz.png" alt=""></li>
-      <li class="cat reveal"><div><h3>Family Size</h3><p>Big bottle, big value for the whole family.</p><a class="cat-link" href="/family-size-hand-sanitizer">Shop Family Size <span>&rarr;</span></a></div><img src="assets/product-4oz.png" alt=""></li>
-      <li class="cat reveal"><div><h3>Bundles &amp; Kits</h3><p>Better together. Save more.</p><a class="cat-link" href="#bundles" data-cat-jump="bundle">Shop Bundles <span>&rarr;</span></a></div><img src="assets/product-5gal.png" alt=""></li>
+      <li class="cat reveal"><h3>Pocket Size</h3><p>Perfect for on-the-go protection anywhere.</p><img src="assets/mk/cat-pocket.webp" alt=""><a class="cat-link" href="/pocket-hand-sanitizer">Shop Pocket Size <span>&rarr;</span></a></li>
+      <li class="cat reveal"><h3>Daily Defense</h3><p>Long-lasting protection for everyday life.</p><img src="assets/mk/cat-daily.webp" alt=""><a class="cat-link" href="/daily-defense-hand-sanitizer">Shop Daily Defense <span>&rarr;</span></a></li>
+      <li class="cat reveal"><h3>Family Size</h3><p>Big bottle, big value for the whole family.</p><img src="assets/mk/cat-family.webp" alt=""><a class="cat-link" href="/family-size-hand-sanitizer">Shop Family Size <span>&rarr;</span></a></li>
+      <li class="cat reveal"><h3>Bundles &amp; Kits</h3><p>Better together. Save more.</p><img src="assets/mk/cat-bundle.webp" alt=""><a class="cat-link" href="#bundles" data-cat-jump="bundle">Shop Bundles <span>&rarr;</span></a></li>
     </ul>
   </div>
 </section>
 
 {{include:why-love}}
 
-<section class="section proof-compact">
-  <div class="container proof-inner reveal">
+<section class="section">
+  <div class="container panel reveal">
     {{include:proof-strip}}
     {{include:proof-foot}}
   </div>
 </section>
 
 {{include:testimonials}}
-{{include:faq-mini}}
+
+<section class="section">
+  <div class="container">
+    <h2 class="h-left reveal">Frequently Asked Questions</h2>
+    <div class="faq-2col answers reveal">
+      <details><summary>How long does protection last?<small>Up to four hours of protection per application.</small></summary><p>Covexall forms a microscopic shield that bonds to your skin and keeps working after it dries. Reapply after washing hands or after four hours.</p></details>
+      <details><summary>What does “kills 99.9% on contact” mean?<small>It means Covexall kills 99.9% of germs on hands and surfaces in seconds.</small></summary><p>In independent laboratory testing, Covexall achieved a complete kill of 11 bacterial species within 60 seconds.</p></details>
+      <details><summary>Is Covexall safe for kids?<small>Yes! It's water-based, alcohol-free, and non-irritating—made for all ages.</small></summary><p>Keep out of eyes and mouth, as with any hand product.</p></details>
+      <details><summary>Can I use it on sensitive skin?<small>Yes. Covexall is non-irritating and gentle on skin.</small></summary><p>No alcohol means no sting, no cracking and no drying, even with frequent use.</p></details>
+    </div>
+  </div>
+</section>
+
 {{include:newsletter}}

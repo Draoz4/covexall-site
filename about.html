@@ -12,12 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body class="">
 <header class="nav-wrap">
-  <nav class="nav container" aria-label="Main">
+  <nav class="nav" aria-label="Main">
     <a class="logo" href="/" aria-label="Covexall home">COVEXALL</a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
@@ -47,89 +46,67 @@
 <main id="top">
 
 <section class="page-hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container ph-grid">
+  <img class="ph-art" src="assets/mk/hero-about.webp" alt="">
+  <div class="ph-fade"></div>
+  <div class="container">
     <div class="ph-copy reveal">
       <h1>About Covexall</h1>
       <p class="tagline">Protection that stays with you.</p>
-      <p class="lead">We believe life is meant to be explored: hugs, handshakes, high-fives, and all. Covexall gives you the confidence to do it all with long-lasting protection that's gentle, effective, and made for everyone.</p>
-      <a class="btn btn-primary btn-lg" href="#story"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg> Our Story</a>
-    </div>
-    <div class="ph-visual" aria-hidden="true">
-      <img class="ph-viro float-med" src="assets/viro-hero.webp" alt="">
-      <img class="ph-bac float-slow" src="assets/bac-front.webp" alt="">
-      <img class="ph-snot float-fast" src="assets/snot-front.webp" alt="">
-      <img class="ph-cove" src="assets/cove-bust.webp" alt="">
-      <img class="ph-bottle" src="assets/product-4oz.png" alt="">
+      <p class="lead">We believe life is meant to be explored—hugs, handshakes, high-fives, and all. Covexall gives you the confidence to do it all with long-lasting protection that's gentle, effective, and made for everyone.</p>
+      <a class="btn btn-primary" href="#story"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg> Our Story</a>
     </div>
   </div>
 </section>
 
-<section class="section story-sec" id="story">
+<section class="section" id="story">
   <div class="container story">
-    <div class="story-img reveal"><img src="assets/photo-mother-craft.webp" alt="Family at home"><img class="story-cove" src="assets/cove-front-2.webp" alt="" aria-hidden="true"></div>
+    <div class="story-img reveal"><img src="assets/mk/story.webp" alt="Cove with two kids"></div>
     <div class="story-copy reveal">
       <h2>Our Story</h2>
       <p>Covexall was created by a team of parents, scientists, and everyday problem-solvers who wanted better protection for the people they love most.</p>
-      <p>We were tired of products that washed off too quickly, irritated skin, or were harsh on kids. So we created a water-based, alcohol-free formula that forms a microscopic shield on your skin, keeping working for up to four hours.</p>
-      <p><b>Simple. Powerful. Worry-free. That's Covexall.</b></p>
+      <p>We were tired of products that washed off too quickly, irritated skin, or were harsh on kids. So we created a water-based, alcohol-free formula that forms a microscopic shield on your skin—keeping working for up to four hours.</p>
+      <p>Simple. Powerful. Worry-free. That's Covexall.</p>
     </div>
     <ul class="facts reveal">
-      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>Born from a parent's promise to protect.</li>
-      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg></span>Developed with science. Designed for real life.</li>
-      <li><span class="ic flag">🇺🇸</span>Made in the USA with care and quality.</li>
-      <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.5-6 6-6s6 2.5 6 6M15 19c0-2.5 1.5-4 4-4s3 1.5 3 4"/></svg></span>Trusted by families across the country.</li>
+      <li><img src="assets/mk/fact-1.webp" alt="">Born from a parent's promise to protect.</li>
+      <li><img src="assets/mk/fact-2.webp" alt="">Developed with science. Designed for real life.</li>
+      <li><img src="assets/mk/fact-3.webp" alt="">Made in the USA with care and quality.</li>
+      <li><img src="assets/mk/fact-4.webp" alt="">Trusted by families across the country.</li>
     </ul>
   </div>
 </section>
 
-<section class="section values-sec">
-  <div class="container">
+<section class="section">
+  <div class="container panel">
     <h2 class="section-title reveal">Our Values</h2>
     <ul class="values">
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><h3>Safety First</h3><p>We create products you can trust for the people who matter most.</p></li>
-      <li class="reveal"><span class="ic green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 4C12 5 6 11 4 20c9-2 15-8 16-16z"/><path d="M5 19C9 13 13 9 19 5"/></svg></span><h3>Gentle &amp; Effective</h3><p>Powerful protection that's kind to skin and made for everyday use.</p></li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.5-6 6-6s6 2.5 6 6M15 19c0-2.5 1.5-4 4-4s3 1.5 3 4"/></svg></span><h3>Made for Everyone</h3><p>From kids to adults, our products are made for all ages.</p></li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c-4 5.5-7 9-7 12.5A7 7 0 0 0 19 15.5C19 12 16 8.5 12 3z"/></svg></span><h3>Clean Ingredients</h3><p>We use simple, thoughtful ingredients you can feel good about.</p></li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><h3>Better Together</h3><p>We support healthier communities and a cleaner planet.</p></li>
+      <li class="reveal"><img src="assets/mk/val-1.webp" alt=""><h3>Safety First</h3><p>We create products you can trust for the people who matter most.</p></li>
+      <li class="reveal"><img src="assets/mk/val-2.webp" alt=""><h3>Gentle &amp; Effective</h3><p>Powerful protection that's kind to skin and made for everyday use.</p></li>
+      <li class="reveal"><img src="assets/mk/val-3.webp" alt=""><h3>Made for Everyone</h3><p>From kids to adults, our products are made for all ages.</p></li>
+      <li class="reveal"><img src="assets/mk/val-4.webp" alt=""><h3>Clean Ingredients</h3><p>We use simple, thoughtful ingredients you can feel good about.</p></li>
+      <li class="reveal"><img src="assets/mk/val-5.webp" alt=""><h3>Better Together</h3><p>We support healthier communities and a cleaner planet.</p></li>
     </ul>
   </div>
 </section>
 
-<section class="crew section">
+<section class="section">
   <div class="container">
     <h2 class="section-title reveal">Meet the Covexall Crew</h2>
     <ul class="crew-grid">
-  <li class="crew-card c-cove reveal">
-    <div class="crew-img"><img src="assets/cove-front.webp" alt="Cove"></div>
-    <div class="crew-body"><h3>Cove</h3><span class="role">The Protector</span><p>Cove is always ready to jump in and keep germs at bay so you can live life fully.</p></div>
-  </li>
-  <li class="crew-card c-viro reveal">
-    <div class="crew-img"><img src="assets/viro-head.webp" alt="Viro"></div>
-    <div class="crew-body"><h3>Viro</h3><span class="role">The Spreader</span><p>Viro loves crowds and spreads germs fast. But Cove is always one step ahead!</p></div>
-  </li>
-  <li class="crew-card c-bac reveal">
-    <div class="crew-img"><img src="assets/bac-front.webp" alt="Bac"></div>
-    <div class="crew-body"><h3>Bac</h3><span class="role">The Brawler</span><p>Tough and hard to beat. Bac thinks he's unstoppable. Not when Cove is around!</p></div>
-  </li>
-  <li class="crew-card c-snot reveal">
-    <div class="crew-img"><img src="assets/snot-front.webp" alt="Snot"></div>
-    <div class="crew-body"><h3>Snot</h3><span class="role">The Slime</span><p>Gross, sticky, and everywhere. Snot can't hide from Covexall's long-lasting shield!</p></div>
-  </li>
+  <li class="crew-card reveal"><div class="crew-img"><img src="assets/cove-front.webp" alt="Cove"></div><div class="crew-body"><h3 class="c-cove">Cove</h3><span class="role c-cove">The Protector</span><p>Cove is always ready to jump in and keep germs at bay so you can live life fully.</p></div></li>
+  <li class="crew-card reveal"><div class="crew-img"><img src="assets/viro-head.webp" alt="Viro"></div><div class="crew-body"><h3 class="c-viro">Viro</h3><span class="role c-viro">The Spreader</span><p>Viro loves crowds and spreads germs fast. But Cove is always one step ahead!</p></div></li>
+  <li class="crew-card reveal"><div class="crew-img"><img src="assets/bac-front.webp" alt="Bac"></div><div class="crew-body"><h3 class="c-bac">Bac</h3><span class="role c-bac">The Brawler</span><p>Tough and hard to beat. Bac thinks he's unstoppable. Not when Cove is around!</p></div></li>
+  <li class="crew-card reveal"><div class="crew-img"><img src="assets/snot-front.webp" alt="Snot"></div><div class="crew-body"><h3 class="c-snot">Snot</h3><span class="role c-snot">The Slime</span><p>Gross, sticky, and everywhere. Snot can't hide from Covexall's long-lasting shield!</p></div></li>
 </ul>
 
   </div>
 </section>
 
-<section class="mission section" id="mission">
-  <div class="container mission-inner reveal">
-    <div class="mission-chars" aria-hidden="true">
-      <img class="m-mom" src="assets/mom-full.webp" alt="">
-      <img class="m-maya" src="assets/maya-three-quarter.webp" alt="">
-    </div>
+<section class="section" id="mission">
+  <div class="container mission-band reveal">
+    <img src="assets/mk/mission-family.webp" alt="Family with Covexall">
     <div class="mission-copy">
-      <p class="eyebrow light">Our Mission</p>
-      <h2>Made for families. Built for real life.</h2>
+      <h2>Our Mission</h2>
       <p>To give families, schools, and communities the power to live boldly and worry-free with innovative protection that fits seamlessly into everyday life.</p>
       <ul class="mission-points">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>Long-lasting protection</li>
@@ -137,30 +114,24 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Confidence in every touch</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg>Healthier today. Stronger tomorrow.</li>
       </ul>
-      <a class="btn btn-white" href="/products">Shop Now</a>
     </div>
-    <div class="mission-cove" aria-hidden="true"><img src="assets/cove-front-2.webp" alt=""></div>
+    <img src="assets/mk/mission-splash.webp" alt="">
   </div>
 </section>
 
-
-<section class="section strip-sec">
-  <div class="container">
-    <h2 class="section-title reveal">Loved by families. Trusted every day.</h2>
+<section class="section loved-sec">
+  <div class="container" style="grid-template-columns:1fr">
+    <h2 class="section-title reveal">Loved by families. Trusted by millions.</h2>
     <ul class="photo-strip reveal">
-      <li><img src="assets/photo-mother-baby.webp" alt=""></li>
-      <li><img src="assets/life-gym.webp" alt=""></li>
-      <li><img src="assets/photo-doctor.webp" alt=""></li>
-      <li><img src="assets/photo-mother-craft.webp" alt=""></li>
-      <li><img src="assets/life-office.webp" alt=""></li>
-      <li><img src="assets/life-travel.webp" alt=""></li>
+      <li><img src="assets/mk/strip-1.webp" alt=""></li><li><img src="assets/mk/strip-2.webp" alt=""></li><li><img src="assets/mk/strip-3.webp" alt=""></li>
+      <li><img src="assets/mk/strip-4.webp" alt=""></li><li><img src="assets/mk/strip-5.webp" alt=""></li><li><img src="assets/mk/strip-6.webp" alt=""></li>
     </ul>
   </div>
 </section>
 
 </main>
 <footer class="footer">
-  <div class="container footer-grid">
+  <div class="footer-inner">
     <div class="footer-brand">
       <a class="logo" href="/">COVEXALL</a>
       <p>Water-based. Alcohol-free.<br>Protection that stays with you.</p>
@@ -184,8 +155,8 @@
       <a href="/how-it-works">How It Works</a>
       <a href="/where-its-used">Where It's Used</a>
       <a href="/proof">Proof</a>
-      <a href="/education">Education</a>
       <a href="/faq">FAQs</a>
+      <a href="/education">Education</a>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
@@ -209,9 +180,9 @@
         <p class="nl-status" role="status" aria-live="polite"></p>
       </form>
     </div>
-    <div class="footer-mark" aria-hidden="true"><span>C</span></div>
+    <img class="footer-splash" src="assets/mk/footer-splash.webp" alt="" aria-hidden="true">
   </div>
-  <div class="container footer-bottom">
+  <div class="footer-bottom">
     <p>© <span data-year></span> COVEXALL. All rights reserved.</p>
     <nav aria-label="Legal"><a data-link="privacy" href="#">Privacy Policy</a><a data-link="terms" href="#">Terms of Service</a><a href="#top">Accessibility</a></nav>
   </div>

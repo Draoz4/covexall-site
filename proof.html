@@ -12,12 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body class="">
 <header class="nav-wrap">
-  <nav class="nav container" aria-label="Main">
+  <nav class="nav" aria-label="Main">
     <a class="logo" href="/" aria-label="Covexall home">COVEXALL</a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
@@ -47,104 +46,83 @@
 <main id="top">
 
 <section class="page-hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container ph-grid">
+  <img class="ph-art" src="assets/mk/hero-proof.webp" alt="">
+  <div class="ph-fade"></div>
+  <div class="container">
     <div class="ph-copy reveal">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>Proof</span></nav>
-      <h1>Proof you can trust.<br><span class="grad">Real protection for real life.</span></h1>
+      <h1>Proof you<br>can trust.</h1>
+      <p class="tagline">Real protection for real life.</p>
       <p class="lead">Covexall is water-based, alcohol-free, non-irritating, kills 99.9% on contact, and provides up to four hours of protection per application.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary btn-lg" href="/products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg> Shop Products</a>
-        <a class="btn btn-ghost btn-lg" href="/how-it-works"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg> How It Works</a>
+        <a class="btn btn-primary" href="/products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg> Shop Products</a>
+        <a class="btn btn-ghost" href="/how-it-works"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg> How It Works</a>
       </div>
-    </div>
-    <div class="ph-visual" aria-hidden="true">
-      <div class="hv-shield ph-shield"></div>
-      <img class="ph-cove ph-cove-lg" src="assets/cove-bust.webp" alt="">
-      <img class="ph-bottle" src="assets/product-4oz.png" alt="">
-    </div>
-  </div>
-</section>
-
-<section class="section claims-sec">
-  <div class="container">
-    <ul class="claim-cards">
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><circle cx="12" cy="12" r="2.5"/></svg></span>Kills 99.9% on contact.</li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Up to four hours of protection per application.</li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c-4 5.5-7 9-7 12.5A7 7 0 0 0 19 15.5C19 12 16 8.5 12 3z"/></svg></span>Water-based.</li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 4C12 5 6 11 4 20c9-2 15-8 16-16z"/></svg></span>Alcohol-free.</li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 3C13 4 8 9 4 21c12-4 17-9 17-18z"/></svg></span>Non-irritating.</li>
-      <li class="reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>Effective against COVID-19, MRSA, C. diff, E. coli.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section efficacy-sec">
-  <div class="container efficacy">
-    <div class="eff-card reveal">
-      <h2>The efficacy at a glance</h2>
-      <ul class="eff-stats">
-        <li><strong>99.9%</strong><span>Kills 99.9% on contact.</span></li>
-        <li><strong>4<small>HOURS</small></strong><span>Up to four hours of protection per application.</span></li>
-        <li><strong class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c-4 5.5-7 9-7 12.5A7 7 0 0 0 19 15.5C19 12 16 8.5 12 3z"/></svg></strong><span>Water-based.</span></li>
-        <li><strong class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 4C12 5 6 11 4 20c9-2 15-8 16-16z"/></svg></strong><span>Alcohol-free.</span></li>
-        <li><strong class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 3C13 4 8 9 4 21c12-4 17-9 17-18z"/></svg></strong><span>Non-irritating.</span></li>
-      </ul>
-      <p class="eff-bar"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><b>Effective against COVID-19, MRSA, C. diff, E. coli.</b></p>
-      <dl class="lab-facts">
-        <div><dt>On-contact kill</dt><dd>Complete kill of 11 bacterial species at 60 seconds, including E. coli, MRSA, P. aeruginosa, K. pneumoniae and C. difficile (including spores).</dd></div>
-        <div><dt>Duration</dt><dd>SARS-CoV-2 reduced 99.0–99.98% after drying at 1 hour and 4 hours from a single application, in a certified BSL-3 laboratory.</dd></div>
-        <div><dt>Made in the USA</dt><dd>Manufactured in an FDA cGMP-compliant facility.</dd></div>
-      </dl>
-    </div>
-    <div class="eff-card reveal">
-      <h2>What Covexall is effective against</h2>
-      <p class="center muted">Effective against COVID-19, MRSA, C. diff, E. coli.</p>
-      <ul class="eff-villains">
-        <li><img src="assets/viro-main.webp" alt="Viro"><h3 class="v-viro">VIRO</h3><p>Spreads fast and loves crowds.</p></li>
-        <li><img src="assets/bac-front.webp" alt="Bac"><h3 class="v-bac">BAC</h3><p>Tough and hard to beat.</p></li>
-        <li><img src="assets/snot-front.webp" alt="Snot"><h3 class="v-snot">SNOT</h3><p>Gross, sticky, and everywhere.</p></li>
-      </ul>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2 class="section-title reveal">How Covexall works</h2>
-    <ol class="steps">
-  <li class="step reveal">
-    <span class="step-num">1</span>
-    <div class="step-icon"><svg viewBox="0 0 64 64" fill="none"><path d="M32 8c-8 12-14 20-14 28a14 14 0 0 0 28 0c0-8-6-16-14-28z" fill="url(#g1)"/><path d="M8 52c6-4 12-6 18-6h12c6 0 12 2 18 6" stroke="#F3B98C" stroke-width="5" stroke-linecap="round"/><defs><linearGradient id="g1" x1="18" y1="10" x2="46" y2="50"><stop stop-color="#7DD3FC"/><stop offset="1" stop-color="#1D6FEB"/></linearGradient></defs></svg></div>
-    <h3>Applies</h3><p>Easy to apply. Dries in seconds.</p>
-  </li>
-  <li class="step reveal">
-    <span class="step-num">2</span>
-    <div class="step-icon"><svg viewBox="0 0 64 64" fill="none"><path d="M32 32L14 18M32 32l18-14M32 32L16 50M32 32l16 18" stroke="#1D6FEB" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="32" r="8" fill="#1D6FEB"/><circle cx="14" cy="18" r="6" fill="#4CC9FF"/><circle cx="50" cy="18" r="6" fill="#4CC9FF"/><circle cx="16" cy="50" r="6" fill="#4CC9FF"/><circle cx="48" cy="50" r="6" fill="#4CC9FF"/></svg></div>
-    <h3>Bonds</h3><p>Binds to your skin for lasting coverage.</p>
-  </li>
-  <li class="step reveal">
-    <span class="step-num">3</span>
-    <div class="step-icon"><svg viewBox="0 0 64 64" fill="none"><path d="M32 6l20 8v16c0 12-8 22-20 28C20 52 12 42 12 30V14l20-8z" fill="url(#g3)"/><circle cx="32" cy="32" r="11" fill="#fff"/><path d="M32 25v7l5 3" stroke="#1D6FEB" stroke-width="3" stroke-linecap="round"/><defs><linearGradient id="g3" x1="12" y1="6" x2="52" y2="58"><stop stop-color="#4CC9FF"/><stop offset="1" stop-color="#1D6FEB"/></linearGradient></defs></svg></div>
-    <h3>Protects up to four hours</h3><p>Long-lasting defense for your day.</p>
-  </li>
-  <li class="step reveal">
-    <span class="step-num">4</span>
-    <div class="step-icon"><svg viewBox="0 0 64 64" fill="none"><path d="M52 10C36 12 22 24 14 52c22-6 36-20 38-42z" fill="url(#g4)"/><path d="M16 50C26 36 36 26 48 16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="g4" x1="14" y1="52" x2="52" y2="10"><stop stop-color="#1D6FEB"/><stop offset="1" stop-color="#7DD3FC"/></linearGradient></defs></svg></div>
-    <h3>Non-irritating</h3><p>Gentle on skin. Made for everyone.</p>
-  </li>
-</ol>
-
+    <ul class="claim-cards">
+      <li class="reveal"><img src="assets/mk/pc-1.webp" alt="">Kills 99.9%<br>on contact.</li>
+      <li class="reveal"><img src="assets/mk/pc-2.webp" alt="">Up to four hours of protection per application.</li>
+      <li class="reveal"><img src="assets/mk/pc-3.webp" alt="">Water-based.</li>
+      <li class="reveal"><img src="assets/mk/pc-4.webp" alt="">Alcohol-free.</li>
+      <li class="reveal"><img src="assets/mk/pc-5.webp" alt="">Non-irritating.</li>
+      <li class="reveal"><img src="assets/mk/pc-6.webp" alt="">Effective against COVID-19, MRSA, C. diff, E. coli.</li>
+    </ul>
   </div>
 </section>
 
-<section class="section why-proof-sec">
+<section class="section">
+  <div class="container efficacy">
+    <div class="eff-card reveal">
+      <h2>The efficacy at a glance</h2>
+      <ul class="eff-stats">
+        <li><img src="assets/mk/eff-999.webp" alt="99.9%"><span>Kills 99.9% on contact.</span></li>
+        <li><img src="assets/mk/eff-4h.webp" alt="4 hours"><span>Up to four hours of protection per application.</span></li>
+        <li><img src="assets/mk/eff-water.webp" alt=""><span>Water-based.</span></li>
+        <li><img src="assets/mk/eff-leaf.webp" alt=""><span>Alcohol-free.</span></li>
+        <li><img src="assets/mk/eff-feather.webp" alt=""><span>Non-irritating.</span></li>
+      </ul>
+      <p class="eff-bar"><img src="assets/mk/eff-shield.webp" alt=""><b>Effective against COVID-19, MRSA, C. diff, E. coli.</b></p>
+      <dl class="lab-facts">
+        <div><dt>On-contact kill</dt><dd>Complete kill of 11 bacterial species at 60 seconds, including E. coli, MRSA, P. aeruginosa, K. pneumoniae and C. difficile (including spores).</dd></div>
+        <div><dt>Duration</dt><dd>SARS-CoV-2 reduced 99.0–99.98% after drying at 1 hour and 4 hours from a single application, in a certified BSL-3 laboratory.</dd></div>
+      </dl>
+    </div>
+    <div class="eff-card reveal">
+      <h2>What Covexall is effective against</h2>
+      <p class="center muted" style="font-size:12.5px;margin-top:4px">Effective against COVID-19, MRSA, C. diff, E. coli.</p>
+      <ul class="eff-villains">
+        <li><img src="assets/viro-main.webp" alt="Viro"><h3 class="c-viro">VIRO</h3><p>Spreads fast<br>and loves crowds.</p></li>
+        <li><img src="assets/bac-front.webp" alt="Bac"><h3 class="c-bac">BAC</h3><p>Tough and<br>hard to beat.</p></li>
+        <li><img src="assets/snot-front.webp" alt="Snot"><h3 class="c-snot">SNOT</h3><p>Gross, sticky,<br>and everywhere.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container panel">
+    <h2 class="section-title reveal" style="margin-bottom:14px">How Covexall works</h2>
+    <ol class="steps row">
+      <li class="step reveal"><span class="step-num">1</span><img src="assets/mk/hstep-1.webp" alt=""><div><h3>Applies</h3><p>Easy to apply. Dries in seconds.</p></div></li>
+      <li class="step reveal"><span class="step-num">2</span><img src="assets/mk/hstep-2.webp" alt=""><div><h3>Bonds</h3><p>Binds to your skin for lasting coverage.</p></div></li>
+      <li class="step reveal"><span class="step-num">3</span><img src="assets/mk/hstep-3.webp" alt=""><div><h3>Protects up to four hours</h3><p>Long-lasting defense for your day.</p></div></li>
+      <li class="step reveal"><span class="step-num">4</span><img src="assets/mk/hstep-4.webp" alt=""><div><h3>Non-irritating</h3><p>Gentle on skin. Made for everyone.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
   <div class="container">
     <h2 class="section-title reveal">Why the proof matters</h2>
     <ul class="why-proof">
-      <li class="reveal"><img src="assets/photo-mother-craft.webp" alt=""><div><h3>Protection for everyday life.</h3><p>Real protection for real-world moments at school, home, and everywhere in between.</p></div></li>
-      <li class="reveal"><img src="assets/photo-mother-baby.webp" alt=""><div><h3>Confidence for busy routines.</h3><p>Up to four hours of protection gives you peace through the day with peace of mind.</p></div></li>
-      <li class="reveal"><img src="assets/life-office.webp" alt=""><div><h3>Clean, gentle protection.</h3><p>Water-based, alcohol-free, and non-irritating for protection you can feel good about.</p></div></li>
+      <li class="reveal"><img src="assets/mk/why-proof-1.webp" alt=""><div><h3>Protection for everyday life.</h3><p>Real protection for real-world moments at school, home, and everywhere in between.</p></div></li>
+      <li class="reveal"><img src="assets/mk/why-proof-2.webp" alt=""><div><h3>Confidence for busy routines.</h3><p>Up to four hours of protection gives you peace through the day with peace of mind.</p></div></li>
+      <li class="reveal"><img src="assets/mk/why-proof-3.webp" alt=""><div><h3>Clean, gentle protection.</h3><p>Water-based, alcohol-free, and non-irritating for protection you can feel good about.</p></div></li>
     </ul>
   </div>
 </section>
@@ -152,13 +130,12 @@
 <section class="section">
   <div class="container">
     <h2 class="section-title reveal">Proof FAQs</h2>
-    <div class="faq-2col reveal">
-      <details><summary>How long does Covexall protect?</summary><p>Covexall provides up to four hours of protection per application.</p></details>
-      <details><summary>Is Covexall alcohol-free?</summary><p>Yes. Covexall is alcohol-free.</p></details>
-      <details><summary>What claims does Covexall make?</summary><p>Covexall is water-based, alcohol-free, non-irritating, kills 99.9% on contact, and provides up to four hours of protection per application.</p></details>
-      <details><summary>Is Covexall non-irritating?</summary><p>Yes. Covexall is non-irritating and gentle on skin.</p></details>
-      <details><summary>What is Covexall effective against?</summary><p>Covexall is effective against COVID-19, MRSA, C. diff, and E. coli.</p></details>
-      <details><summary>Where was it tested?</summary><p>On-contact kill testing by an independent microbiology laboratory; duration testing against SARS-CoV-2 in a certified BSL-3 laboratory.</p></details>
+    <div class="faq-2col answers reveal">
+      <details><summary>How long does Covexall protect?<small>Covexall provides up to four hours of protection per application.</small></summary><p>Reapply after washing hands or after four hours.</p></details>
+      <details><summary>Is Covexall alcohol-free?<small>Yes. Covexall is alcohol-free.</small></summary><p>The water-based formula won't dry, crack or sting your skin.</p></details>
+      <details><summary>What claims does Covexall make?<small>Covexall is water-based, alcohol-free, non-irritating, kills 99.9% on contact, and provides up to four hours of protection per application.</small></summary><p>Every claim is traceable to independent laboratory testing.</p></details>
+      <details><summary>Is Covexall non-irritating?<small>Yes. Covexall is non-irritating and gentle on skin.</small></summary><p>Fragrance-free, dye-free and hypoallergenic.</p></details>
+      <details><summary>What is Covexall effective against?<small>Covexall is effective against COVID-19, MRSA, C. diff, and E. coli.</small></summary><p>On-contact kill verified at 60 seconds across 11 bacterial species; four-hour residual protection verified for SARS-CoV-2 and S. aureus.</p></details>
     </div>
     <p class="proof-foot"><sup>*</sup>On-contact kill verified in independent laboratory testing at 60 seconds across 11 bacterial species. Up to four-hour residual protection verified for SARS-CoV-2 and S. aureus in BSL-3 laboratory testing; additional pathogens pending four-hour testing.</p>
 
@@ -166,26 +143,21 @@
 </section>
 
 <section class="newsletter">
-  <div class="container newsletter-inner reveal">
-    <img class="nl-cove" src="assets/cove-bust.webp" alt="" aria-hidden="true">
-    <div class="nl-copy">
-      <h2>Stay Protected. <span>Stay in the Loop.</span></h2>
-      <p>Get tips, new product updates, and special offers, straight to your inbox.</p>
-    </div>
+  <div class="container newsletter-inner dark reveal">
+    <img class="nl-cove" src="assets/mk/nl-cove.webp" alt="" aria-hidden="true">
+    <div class="nl-copy"><h2>Stay protected. <span>Stay in the loop.</span></h2><p>Get tips, new product updates, and special offers—straight to your inbox.</p></div>
     <form class="nl-form" data-form="newsletter">
       <label class="sr-only" for="nl-email">Email address</label>
       <input id="nl-email" type="email" name="email" placeholder="Enter your email" required>
       <button class="btn btn-primary" type="submit">Subscribe</button>
-      <p class="nl-small">No spam, ever. Unsubscribe anytime.</p>
       <p class="nl-status" role="status" aria-live="polite"></p>
     </form>
   </div>
 </section>
 
-
 </main>
 <footer class="footer">
-  <div class="container footer-grid">
+  <div class="footer-inner">
     <div class="footer-brand">
       <a class="logo" href="/">COVEXALL</a>
       <p>Water-based. Alcohol-free.<br>Protection that stays with you.</p>
@@ -209,8 +181,8 @@
       <a href="/how-it-works">How It Works</a>
       <a href="/where-its-used">Where It's Used</a>
       <a href="/proof">Proof</a>
-      <a href="/education">Education</a>
       <a href="/faq">FAQs</a>
+      <a href="/education">Education</a>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
@@ -234,9 +206,9 @@
         <p class="nl-status" role="status" aria-live="polite"></p>
       </form>
     </div>
-    <div class="footer-mark" aria-hidden="true"><span>C</span></div>
+    <img class="footer-splash" src="assets/mk/footer-splash.webp" alt="" aria-hidden="true">
   </div>
-  <div class="container footer-bottom">
+  <div class="footer-bottom">
     <p>© <span data-year></span> COVEXALL. All rights reserved.</p>
     <nav aria-label="Legal"><a data-link="privacy" href="#">Privacy Policy</a><a data-link="terms" href="#">Terms of Service</a><a href="#top">Accessibility</a></nav>
   </div>
