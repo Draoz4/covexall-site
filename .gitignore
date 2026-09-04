@@ -1,0 +1,6 @@
+_*.png
+_*.jpg
+.vercel
+node_modules
+.DS_Store
+Thumbs.db
